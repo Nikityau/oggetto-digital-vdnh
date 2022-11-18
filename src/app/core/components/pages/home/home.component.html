@@ -1,0 +1,19 @@
+<div class="home">
+  <app-home-banner
+    [banner]="currentBanner"
+  ></app-home-banner>
+  <div class="home__container page__container">
+
+  </div>
+  <nav class="home__industries el_pos_abs_bl">
+    <div class="home__industries-container">
+      <app-home-industry *ngFor="let ind of industries"
+                         [title]="ind?.['title'] || 'Title'"
+                         [color]="ind?.['color_hex'] || '#000'"
+                         [indSlug]="ind?.['slug'] || 'test'"
+      >
+
+      </app-home-industry>
+    </div>
+  </nav>
+</div>

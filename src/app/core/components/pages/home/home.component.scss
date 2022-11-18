@@ -1,0 +1,24 @@
+.home {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #2c3a3a;
+
+  z-index: 0;
+}
+.home__container {
+  width: 100%;
+}
+
+.home__industries {
+  width: 100%;
+}
+.home__industries-container {
+  width: 100%;
+  height: 100px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}

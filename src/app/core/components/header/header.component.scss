@@ -1,0 +1,59 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+
+  z-index: 1;
+}
+
+.header__container {
+  width: 100%;
+  height: 100%;
+
+  padding: 48px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__burger-side {
+  display: flex;
+  align-items: center;
+  gap: 82px;
+
+}
+.header__menu {
+
+}
+.header__menu img,
+.header__search img{
+  width: 24px;
+  height: 24px;
+}
+.header__logo {
+
+}
+.header__logo img {
+  width: 111px;
+  height: auto;
+}
+.header__connect {
+  height: 50px;
+
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+.header__connect span {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #fff;
+}
