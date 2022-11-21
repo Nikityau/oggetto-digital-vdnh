@@ -3,7 +3,16 @@
     [banner]="currentBanner"
   ></app-home-banner>
   <div class="home__container page__container">
-
+    <div class="home__wrapper">
+      <div class="home__title">
+        <h1>Знай наших</h1>
+      </div>
+      <div class="home__carousel">
+        <app-home-carousel
+          [companies]=enterprises
+        ></app-home-carousel>
+      </div>
+    </div>
   </div>
   <nav class="home__industries el_pos_abs_bl">
     <div class="home__industries-container">

@@ -1,20 +1,23 @@
 import {NgModule} from "@angular/core";
 import {RouterLink} from "@angular/router";
-import {NgForOf} from "@angular/common";
+import {NgClass, NgForOf} from "@angular/common";
 
 import {HomeComponent} from "./home.component";
 import {IndustryComponent} from "./components/industry/industry.component";
 import {BannerComponent} from "./components/banner/banner.component";
+import {CarouselComponent} from "./components/carousel/carousel.component";
 
 @NgModule({
   imports: [
     RouterLink,
-    NgForOf
+    NgForOf,
+    NgClass
   ],
   declarations: [
     HomeComponent,
     IndustryComponent,
-    BannerComponent
+    BannerComponent,
+    CarouselComponent
   ],
   exports: [
     HomeComponent

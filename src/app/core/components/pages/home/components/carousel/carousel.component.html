@@ -1,0 +1,14 @@
+<div class="carousel">
+  <div class="carousel__container">
+    <div class="carousel__current-co">
+      <img [src]="currentCompany?.['icon']" alt="co-icon">
+    </div>
+  </div>
+  <div class="carousel__pagination">
+    <div class="carousel__pagination-circle" *ngFor="let comp of companies"
+         [ngClass]="{ 'carousel__pagination-circle_active': currentCompany['id'] == comp['id'] }"
+      (click)="onPaginationClick(comp)"
+    >
+    </div>
+  </div>
+</div>
