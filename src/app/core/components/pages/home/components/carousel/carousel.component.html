@@ -1,6 +1,6 @@
 <div class="carousel">
   <div class="carousel__container">
-    <div class="carousel__current-co">
+    <div class="carousel__current-co" [routerLink]="[path, currentCompany?.['industry_slug'] || 'test', currentCompany?.['company_slug'] || 'test']">
       <img [src]="currentCompany?.['icon']" alt="co-icon">
     </div>
   </div>

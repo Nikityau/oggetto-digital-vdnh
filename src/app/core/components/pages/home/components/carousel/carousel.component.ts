@@ -1,5 +1,5 @@
-import {Component, Input, OnInit, OnChanges, SimpleChanges} from "@angular/core";
-
+import {Component, Input, OnInit, OnChanges, SimpleChanges, Directive} from "@angular/core";
+import {PathRoutesDef} from "../../../../../routes/app-routes.module";
 
 @Component({
   selector: 'app-home-carousel',
@@ -10,6 +10,8 @@ import {Component, Input, OnInit, OnChanges, SimpleChanges} from "@angular/core"
 })
 export class CarouselComponent implements OnInit, OnChanges {
   currentCompany: any = undefined
+
+  path:string = '/' + PathRoutesDef.INDUSTRY
 
   @Input() companies: any[] = []
 
